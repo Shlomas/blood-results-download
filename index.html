@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f1e9">
+    <meta name="description" content="Blood Results turns supported blood-test PDFs into a private, local timeline you can review and explore on Windows.">
+    <meta property="og:title" content="Blood Results — private test history on your computer">
+    <meta property="og:description" content="Import, review and explore blood-test trends. Your reports stay on your computer.">
+    <meta property="og:image" content="https://shlomas.github.io/blood-results-download/assets/blood-results-hero.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shlomas.github.io/blood-results-download/">
+    <title>Blood Results — private blood-test trends</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Blood Results home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>Blood Results</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#how-it-works">How it works</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#install">Install</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Early access for Windows</p>
+          <h1 id="hero-title">Your test history,<br><em>easier to see.</em></h1>
+          <p class="hero-intro">Turn supported blood-test PDFs into a private timeline. Review every imported value, follow changes over time, and keep the entire record on your own computer.</p>
+          <div class="hero-actions">
+            <a class="button primary js-download" href="https://github.com/Shlomas/blood-results-download/releases/download/v0.2.3/BloodResults-Setup-0.2.3.exe">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 20h14"/></svg>
+              <span>Download for Windows</span>
+            </a>
+            <a class="button quiet js-release" href="https://github.com/Shlomas/blood-results-download/releases">Release details</a>
+          </div>
+          <p class="download-meta" aria-live="polite">
+            <span class="js-version">Version 0.2.3</span>
+            <span>Windows 10/11 · 64-bit</span>
+            <span class="js-size">133 MB</span>
+            <span class="js-count" hidden></span>
+          </p>
+        </div>
+        <figure class="hero-art">
+          <img src="assets/blood-results-hero.png" width="1536" height="1024" alt="Illustration of a laptop showing trend lines beside laboratory reports and a padlock">
+        </figure>
+      </section>
+
+      <section class="trust-bar" aria-label="Product principles">
+        <div><span class="trust-number">01</span><strong>Local by design</strong><p>No account or cloud service is required.</p></div>
+        <div><span class="trust-number">02</span><strong>Encrypted profiles</strong><p>Each profile keeps its reports and results encrypted.</p></div>
+        <div><span class="trust-number">03</span><strong>You review imports</strong><p>Check parsed values before adding them to your history.</p></div>
+      </section>
+
+      <section class="process section" id="how-it-works" aria-labelledby="process-title">
+        <div class="section-heading">
+          <p class="kicker">A clearer timeline</p>
+          <h2 id="process-title">From a PDF to a useful view</h2>
+          <p>Blood Results organizes report values so you can compare dates and focus on the part of a trend that matters to you.</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <span>1</span>
+            <div><h3>Import a report</h3><p>Select a supported blood-test PDF from your computer.</p></div>
+          </li>
+          <li>
+            <span>2</span>
+            <div><h3>Review every result</h3><p>Confirm names, values, units and reference ranges before saving.</p></div>
+          </li>
+          <li>
+            <span>3</span>
+            <div><h3>Explore the trend</h3><p>Choose tests, dates and a normalized focus range in one view.</p></div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="privacy section" id="privacy" aria-labelledby="privacy-title">
+        <div class="privacy-card">
+          <div class="lock-visual" aria-hidden="true">
+            <div class="lock-loop"></div>
+            <div class="lock-body"><span></span></div>
+          </div>
+          <div>
+            <p class="kicker">Private by default</p>
+            <h2 id="privacy-title">Your reports stay with you</h2>
+            <p>The desktop app works without an online account. Medical content and original PDFs are stored in password-protected, encrypted profiles on your computer. The app does not include analytics or cloud synchronization.</p>
+            <ul class="check-list">
+              <li>Separate profiles for people sharing one computer</li>
+              <li>Password-encrypted portable backups</li>
+              <li>Automatic locking after inactivity and Windows lock</li>
+            </ul>
+            <p class="fine-print">Keep your password and a backup safe. There is no server-side copy and no password recovery.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="install section" id="install" aria-labelledby="install-title">
+        <div class="section-heading compact">
+          <p class="kicker">Test release</p>
+          <h2 id="install-title">Ready to try it?</h2>
+          <p>This is an early, unsigned Windows build for a small group of testers. Start with a report you can verify and tell the developer about anything that looks wrong.</p>
+        </div>
+        <div class="install-grid">
+          <div class="install-steps">
+            <h3>Install in three steps</h3>
+            <ol>
+              <li><span>01</span><p>Download the Windows installer from GitHub Releases.</p></li>
+              <li><span>02</span><p>Confirm the checksum below. Windows may identify this unsigned test build as an unrecognized app.</p></li>
+              <li><span>03</span><p>Create a profile and password, then import and carefully review your first report.</p></li>
+            </ol>
+          </div>
+          <aside class="release-card" aria-label="Current release">
+            <p class="release-label">Current release</p>
+            <div class="release-version js-version-short">v0.2.3</div>
+            <p>For 64-bit Windows 10 and Windows 11.</p>
+            <a class="button primary full js-download" href="https://github.com/Shlomas/blood-results-download/releases/download/v0.2.3/BloodResults-Setup-0.2.3.exe">Download installer</a>
+            <dl>
+              <div><dt>File</dt><dd class="js-filename">BloodResults-Setup-0.2.3.exe</dd></div>
+              <div><dt>SHA-256</dt><dd><code>c981b5a6b7224c3027598eb741541acaea2dd00b929f536e753254d91765e0c9</code></dd></div>
+            </dl>
+            <p class="count-note js-count-detail">GitHub records installer downloads. <a href="stats.html">View download statistics</a>.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="notice" aria-label="Important notice">
+        <strong>Please keep checking the original report.</strong>
+        <p>Blood Results helps organize and visualize information. It may parse a report incorrectly and does not provide medical advice, diagnosis or treatment. Confirm imported data and discuss health decisions with a qualified professional.</p>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="./"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>Blood Results</span></a>
+      <div class="footer-links">
+        <a class="js-release" href="https://github.com/Shlomas/blood-results-download/releases">Releases</a>
+        <a href="stats.html">Download statistics</a>
+        <a href="notices.html">Open-source notices</a>
+      </div>
+      <p>Built for private, local use.</p>
+    </footer>
+  </body>
+</html>
