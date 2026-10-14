@@ -25,6 +25,9 @@ async function loadCurrentRelease() {
     document.querySelectorAll(".js-version-short").forEach((node) => { node.textContent = release.tag_name; });
     document.querySelectorAll(".js-size").forEach((node) => { node.textContent = formatBytes(installer.size); });
     document.querySelectorAll(".js-filename").forEach((node) => { node.textContent = installer.name; });
+    document.querySelectorAll(".js-checksum").forEach((node) => {
+      node.textContent = /^sha256:[a-f0-9]{64}$/i.test(installer.digest || "") ? installer.digest.slice(7) : "See the checksum file in Release details.";
+    });
     document.querySelectorAll(".js-count").forEach((node) => {
       node.hidden = false;
       node.textContent = `${formatCount(installer.download_count)} installer download${installer.download_count === 1 ? "" : "s"}`;

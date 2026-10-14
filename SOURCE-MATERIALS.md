@@ -1,6 +1,6 @@
-# Source materials for Blood Results v0.2.3
+# Source materials for Blood Results v0.3.0
 
-The Blood Results v0.2.3 Windows installer includes the following copyleft components. Exact source archives and build recipes are attached to the matching GitHub Release:
+The Blood Results v0.3.0 Windows installer includes the following copyleft components. Exact source archives and build recipes are attached to the matching GitHub Release:
 
 - `node-poppler-win32` 2.0.0 — GPL-3.0-or-later. Source tag: <https://github.com/Fdawgs/node-poppler-win32/tree/v2.0.0>
 - Poppler 26.02.0 — GPL-2.0-or-later and GPL-3.0-or-later components. Official source: <https://poppler.freedesktop.org/releases.html>
